@@ -5,7 +5,7 @@ export default function CustomForm(props) {
     const {} = props;
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log('tes');
+        props.onSubmit()
     };
     return (
         <React.Fragment>

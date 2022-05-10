@@ -3,20 +3,25 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Components/Layout';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
+import { useEffect, useState } from 'react';
 
 export default function App() {
+    const [userLoginState, setUserLoginState] = useState(false);
+    useEffect(() => {
+        setUserLoginState(sessionStorage.UserLoginState);
+    });
     return (
         <div className='App'>
             <BrowserRouter>
-                <Layout>
+                <Layout userLoginState={userLoginState}>
                     <Routes>
-                    <Route
+                        <Route
                             path='/'
-                            element={<Home/>}
+                            element={<Home userLoginState={userLoginState} />}
                         />
                         <Route
                             path='/login'
-                            element={<Login/>}
+                            element={<Login userLoginState={userLoginState} />}
                         />
                     </Routes>
                 </Layout>
