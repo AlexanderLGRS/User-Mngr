@@ -5,7 +5,7 @@ export default function CustomButton(props){
     const {text, type} = props
     return(
         <React.Fragment>
-            <button className="customButton btn btn-light" type={type}>
+            <button className="customButton" type={type}>
                 {text}
             </button>
         </React.Fragment>
