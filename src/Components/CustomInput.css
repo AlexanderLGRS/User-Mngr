@@ -1,0 +1,22 @@
+.input-label {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.customInput {
+    padding: 5px 10px;
+    margin: 10px auto;
+    font-size: 18px;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: #000;
+    font-weight: bold;
+}
