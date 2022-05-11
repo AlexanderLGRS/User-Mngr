@@ -1,4 +1,4 @@
-button {
+.customButton {
     background: #098191;
     transition: background ease 0.25s;
     border-radius: 5px;
@@ -15,11 +15,11 @@ button {
     -moz-appearance: none;
 }
 
-button:hover {
+.customButton:hover {
     background: #63b6b8;
 }
 
-button:focus {
+.customButton:focus {
     outline: 1px solid #fff;
     outline-offset: -4px;
 }

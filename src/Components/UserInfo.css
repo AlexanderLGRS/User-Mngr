@@ -1,0 +1,10 @@
+.deleteButton {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(200, 0, 0);
+    padding: 5px;
+}
+
+ion-icon {
+    font-size: 20px;
+}

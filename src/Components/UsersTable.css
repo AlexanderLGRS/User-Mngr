@@ -1,0 +1,55 @@
+table {
+    margin: 20px auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.iconButton {
+    background-color: transparent;
+    border: none;
+}
+
+.deleteColumn {
+    text-align: center;
+}
+
+.creation-dateColumn,
+.countryColumn,
+.roleColumn,
+.emailColumn {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .creation-dateColumn,
+    .countryColumn {
+        display: table-cell;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .nameColumn,
+    .creation-dateColumn,
+    .countryColumn,
+    .roleColumn,
+    .emailColumn,
+    .last-activeColumn {
+        display: table-cell;
+    }
+}
