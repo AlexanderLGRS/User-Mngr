@@ -5,6 +5,16 @@ table {
     width: 90%;
 }
 
+thead tr th {
+    cursor: pointer;
+    background-color: #404040;
+    color: #fff;
+}
+
+.headerColumn::after {
+    content: "▼";
+}
+
 td,
 th {
     border: 1px solid #dddddd;
@@ -18,11 +28,6 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
     background-color: #fff;
-}
-
-.iconButton {
-    background-color: transparent;
-    border: none;
 }
 
 .deleteColumn {

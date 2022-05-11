@@ -2,15 +2,16 @@ import React from 'react';
 import './CustomForm.css';
 
 export default function CustomForm(props) {
-    const {} = props;
+    const { title, formName } = props;
     const submitHandler = (event) => {
         event.preventDefault();
-        props.onSubmit()
+        props.onSubmit();
     };
     return (
         <React.Fragment>
             <div className='formContainer'>
-                <form className='customForm' onSubmit={submitHandler}>
+                <form className={formName} onSubmit={submitHandler}>
+                    <h3 className='formTitle'>{title}</h3>
                     {props.children}
                 </form>
             </div>

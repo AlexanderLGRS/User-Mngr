@@ -4,6 +4,7 @@ import CustomButton from '../Components/CustomButton';
 import './Home.css';
 
 export default function Home(props) {
+    const clickHandler = () => {};
     const {userLoginState}= props
     return (
         <React.Fragment>
@@ -16,7 +17,7 @@ export default function Home(props) {
                 )}
                 {!userLoginState && (
                     <Link to='/login'>
-                        <CustomButton text='Login' type='button' />
+                        <CustomButton text='Login' type='button' clickHandler={clickHandler}/>
                     </Link>
                 )}
             </section>

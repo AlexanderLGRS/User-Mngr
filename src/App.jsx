@@ -10,7 +10,7 @@ export default function App() {
     const [userLoginState, setUserLoginState] = useState(false);
     useEffect(() => {
         setUserLoginState(sessionStorage.UserLoginState);
-    });
+    },[]);
     return (
         <div className='App'>
             <BrowserRouter>

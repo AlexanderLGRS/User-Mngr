@@ -6,9 +6,9 @@ import './Login.css';
 import Swal from 'sweetalert2';
 
 export default function Login(props) {
-    const {} = props;
     const [enteredEmail, setEnteredEmail] = useState('');
     const [enteredPassword, setEnteredPassword] = useState('');
+    const clickHandler = () => {};
     const setEmailHandler = (email) => {
         setEnteredEmail(email);
     };
@@ -35,7 +35,7 @@ export default function Login(props) {
     return (
         <React.Fragment>
             <div className='login'>
-                <CustomForm onSubmit={submitHandler}>
+                <CustomForm formName='loginForm' onSubmit={submitHandler}>
                     <CustomInput
                         label='Insert your email'
                         id='email'
@@ -50,7 +50,11 @@ export default function Login(props) {
                         placeHolder='*****'
                         onChange={setPasswordHandler}
                     />
-                    <CustomButton text='Log In' type='submit' clickHandler={false}/>
+                    <CustomButton
+                        text='Log In'
+                        type='submit'
+                        clickHandler={clickHandler}
+                    />
                 </CustomForm>
             </div>
         </React.Fragment>

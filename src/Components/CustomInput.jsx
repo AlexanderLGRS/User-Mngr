@@ -2,7 +2,7 @@ import React from "react"
 import './CustomInput.css'
 
 export default function CustomInput(props){
-    const {label, id, type, placeHolder,}= props
+    const {label,  id, type, placeHolder,}= props
     const onChangeHandler = (event)=>{
         props.onChange(event.target.value)
     }
@@ -11,7 +11,7 @@ export default function CustomInput(props){
             <label className="input-label" htmlFor={id}>
                 {label}
             </label>
-            <input className="customInput" type={type} id={id} placeholder={placeHolder} onChange={onChangeHandler}/>
+            <input  className="customInput" type={type} id={id} placeholder={placeHolder} onChange={onChangeHandler}/>
         </React.Fragment>
     )
 }

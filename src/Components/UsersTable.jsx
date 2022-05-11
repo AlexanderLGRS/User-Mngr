@@ -2,47 +2,55 @@ import React from 'react';
 import './UsersTable.css';
 
 export default function UsersTable(props) {
-    const {} = props;
+    const sortHandler = (event) => {
+        props.onSortHandler(event.target.id)
+    };
     return (
         <React.Fragment>
             <table>
                 <thead>
                     <tr>
-                        <th className='nameColumn'>
-                            Name{' '}
-                            <button className='iconButton'>
-                                <ion-icon name='caret-down'></ion-icon>
-                            </button>
+                        <th
+                            id='name'
+                            className='headerColumn nameColumn'
+                            onClick={sortHandler}
+                        >
+                            Name
                         </th>
-                        <th className='creation-dateColumn'>
-                            Creation date{' '}
-                            <button className='iconButton'>
-                                <ion-icon name='caret-down'></ion-icon>
-                            </button>
+                        <th
+                            id='creationDate'
+                            className='headerColumn creation-dateColumn'
+                            onClick={sortHandler}
+                        >
+                            Creation date
                         </th>
-                        <th className='countryColumn'>
-                            Country{' '}
-                            <button className='iconButton'>
-                                <ion-icon name='caret-down'></ion-icon>
-                            </button>
+                        <th
+                            id='country'
+                            className='headerColumn countryColumn'
+                            onClick={sortHandler}
+                        >
+                            Country
                         </th>
-                        <th className='roleColumn'>
-                            Role{' '}
-                            <button className='iconButton'>
-                                <ion-icon name='caret-down'></ion-icon>
-                            </button>
+                        <th
+                            id='role'
+                            className='headerColumn roleColumn'
+                            onClick={sortHandler}
+                        >
+                            Role
                         </th>
-                        <th className='emailColumn'>
-                            Email{' '}
-                            <button className='iconButton'>
-                                <ion-icon name='caret-down'></ion-icon>
-                            </button>
+                        <th
+                            id='email'
+                            className='headerColumn emailColumn'
+                            onClick={sortHandler}
+                        >
+                            Email
                         </th>
-                        <th className='last-activeColumn'>
-                            Last active{' '}
-                            <button className='iconButton'>
-                                <ion-icon name='caret-down'></ion-icon>
-                            </button>
+                        <th
+                            id='lastActive'
+                            className='headerColumn last-activeColumn'
+                            onClick={sortHandler}
+                        >
+                            Last active
                         </th>
                         <th className='deleteColumn'></th>
                     </tr>
