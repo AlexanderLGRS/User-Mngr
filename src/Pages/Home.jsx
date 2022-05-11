@@ -8,7 +8,7 @@ export default function Home(props) {
     return (
         <React.Fragment>
             <section className='masthead' role='img' aria-label='Image Description'>
-                <h1>Welcome to NTT Data - User Manager</h1>
+                <h1>NTT Data - User Manager</h1>
                 {userLoginState && (
                     <Link to='/user-manager'>
                         <CustomButton text='User-Mngr' type='button' />
