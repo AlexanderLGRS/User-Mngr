@@ -1,0 +1,35 @@
+.card {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    align-items: flex-start;
+    top: 50px;
+    width: 350px;
+    left: calc(50% - 175px);
+    color: #fff;
+    background-color: rgb(9, 129, 145, 0.9);
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.userDetail {
+    margin-top: 5px;
+    border-bottom: 1px solid #757575;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.closeButton {
+    align-self: flex-end;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+@media screen and (min-width: 1100px) {
+    .card {
+        display: none;
+    }
+}

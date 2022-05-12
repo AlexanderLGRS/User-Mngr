@@ -1,5 +1,5 @@
 .formContainer {
-    width: 90vw;
+    width: 80vw;
     margin: 10px auto;
     padding: 20px;
 }
@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(177, 171, 171, 0.5);
-    padding: 40px;
+    padding: 20px;
     border: 1px solid #000;
     border-radius: 20px;
 }
