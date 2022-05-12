@@ -3,7 +3,7 @@ import './UsersTable.css';
 
 export default function UsersTable(props) {
     const sortHandler = (event) => {
-        props.onSortHandler(event.target.id)
+        props.onSortHandler(event.target.id);
     };
     return (
         <React.Fragment>
